@@ -1,0 +1,31 @@
+{
+  "name": "lit-instantsearch",
+  "version": "0.0.1-0",
+  "description": "Algolia InstantSearch with Lit elements",
+  "main": "index.js",
+  "scripts": {
+    "start": "es-dev-server --app-index index.html --node-resolve --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tvanier/lit-instantsearch.git"
+  },
+  "author": "Thomas Vanier <thomas.vanier@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tvanier/lit-instantsearch/issues"
+  },
+  "homepage": "https://github.com/tvanier/lit-instantsearch#readme",
+  "dependencies": {
+    "algoliasearch": "4.3.0",
+    "instantsearch.css": "7.4.2"
+  },
+  "devDependencies": {
+    "css": "3.0.0",
+    "es-dev-server": "1.56.1",
+    "glob": "7.1.6",
+    "lit-element": "2.3.1",
+    "query-ast": "1.0.3"
+  }
+}

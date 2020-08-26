@@ -1,0 +1,31 @@
+
+<html>
+  <head>
+    <title>Lit InstantSearch</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon-16.ico" sizes='16x16'>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon-32.ico" sizes='32x32'>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@7/themes/algolia.css" crossorigin="anonymous">
+    <script type="module" src="src/index.js"></script>
+  </head>
+
+  <body>
+    <ais-search>
+      <p>Child 1</p>
+    </ais-search>
+
+    <script type="module">
+      import { config } from './demo/geo-search.js';
+      // import { config } from './demo/e-commerce.js';
+      // import { config } from './demo/tourism.js';
+      // import { config } from './demo/media.js';
+
+      const aisSearch = document.querySelector('ais-search');
+      aisSearch.config = config;
+
+      const p = document.createElement('p')
+      p.textContent = 'Child 2'
+      aisSearch.appendChild(p)
+    </script>
+  </body>
+</html>
