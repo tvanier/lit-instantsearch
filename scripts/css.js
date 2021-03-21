@@ -30,7 +30,7 @@ if (!fs.existsSync('dist')) {
 
 const insertCssRE = /\/\* INSERT CSS selector=([\.\-\w]+) \*\//i
 
-glob('src/**/*.js', (err, files) => {
+glob('src/**/*.ts', (err, files) => {
   if (err) {
     console.error(err)
     process.exit(1)

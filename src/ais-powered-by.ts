@@ -1,4 +1,4 @@
-import { css, html } from 'lit-element';
+import { css, html, property } from 'lit-element';
 import { AisElement } from './ais-element.js';
 
 export class AisPoweredBy extends AisElement {
@@ -8,11 +8,7 @@ export class AisPoweredBy extends AisElement {
     `;
   }
 
-  static get properties() { 
-    return { 
-      theme: {type: String},
-    }
-  }
+  @property({ type: String }) theme = 'light'
 
   renderLogo() {
     return html`

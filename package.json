@@ -2,9 +2,12 @@
   "name": "lit-instantsearch",
   "version": "0.0.1-0",
   "description": "Algolia InstantSearch with Lit elements",
-  "main": "index.js",
+  "main": "dist/lit-instantsearch.umd.js",
+  "module": "dist/lit-instantsearch.es.js",
   "scripts": {
-    "start": "es-dev-server --app-index index.html --node-resolve --watch",
+    "css": "node scripts/css.js",
+    "dev": "vite",
+    "build": "tsc && vite build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,14 +21,15 @@
   },
   "homepage": "https://github.com/tvanier/lit-instantsearch#readme",
   "dependencies": {
-    "algoliasearch": "4.3.0",
-    "instantsearch.css": "7.4.2"
+    "algoliasearch": "4.8.6",
+    "instantsearch.css": "7.4.2",
+    "lit-element": "2.4.0"
   },
   "devDependencies": {
     "css": "3.0.0",
-    "es-dev-server": "1.56.1",
     "glob": "7.1.6",
-    "lit-element": "2.3.1",
-    "query-ast": "1.0.3"
+    "query-ast": "1.0.3",
+    "typescript": "4.2.3",
+    "vite": "2.1.2"
   }
 }
